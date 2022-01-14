@@ -1,6 +1,6 @@
 using System;
         
-        namespace MyFirstApp
+        namespace Fellowship
         {
             public class Program
             {
