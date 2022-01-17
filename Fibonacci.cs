@@ -1,14 +1,29 @@
-using System;  
-  public class Fibonacci
-   {  
-     public static void Main(string[] args)  
-      {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-         Console.Write("please enter how many fibonacci numbers we have to generate");
-         int number= Convert.ToInt32(Console.ReadLine());
-         int first=0 , second=1;
-         int result=0;
-         result=first+second;
-         Console.WriteLine("first:{0} second:{1} result:{2}", first, second, result);
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-         }    
-      }  
+namespace Demoproject
+{
+     class Fibonocciseries
+    {
+        public void FindFibonocciSeries()
+        {
+            Console.WriteLine("please enter how many fibonocci number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int first = 0, second = 1;
+            int result = 0;
+            result = first + second;
+            Console.Write("{0} {1} {2},first, second, result");
+                for (int i=3;i<number;i++)
+                {
+                first = second;
+                second = result;
+                result = first + second;
+                Console.Write("" + result);
+                    }
+        }
+    }
+}
+                                                                                      
