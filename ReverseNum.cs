@@ -1,21 +1,24 @@
 using System;
-namespace MyFirstApp
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fellowship
 {
-    class ReverseNum
+     class ReverseNum
     {
-        public static void FindReverseNum()
+        public statc void FindReverseNumber()
         {
-            Console.WriteLine("Enter the reverse number");
-            int number=Convert.ToInt32(Console.ReadLine());
-            int reminder , reverse=0;
+            Console.WriteLine("please enter number to reverse");
+            int number=Convert.ToInt32(Console.ReadLine()); 
+            int remainder,reverse=0;
             while(number>0)
             {
-                reminder=number%10;
-                reverse=(reverse*10)+reminder;
-                number=number/10;
-                
+                reminder = number % 10;
+                reverse = (reverse * 10) + remainder;
+                number = number / 10;
             }
-            Console.WriteLine("After Reverse" +reverse);
         }
     }
 }
