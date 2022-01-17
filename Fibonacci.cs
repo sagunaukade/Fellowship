@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demoproject
+namespace Fellowship
 {
-     class Fibonocciseries
+     class Fibonacci
     {
         public void FindFibonocciSeries()
         {
