@@ -1,18 +1,20 @@
+using System.Data;
+using Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Fellowship
+namespace Default
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(String[] args)
         {
-            Console.WriteLine("Welcome");
-            Console.WriteLine("here comes the change");
-
+            string name;
+            Console.WriteLine("Enter name");
+            name = Console.Readline();
+            Console.Write("my name is" + name);
         }
     }
 }
